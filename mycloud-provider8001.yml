@@ -23,7 +23,6 @@ spring:
     username: root
     password: root
     dbcp2:
-<<<<<<< HEAD
       min-idle: 5                                           # 数据库连接池的最小维持连接数
       initial-size: 5                                       # 初始化连接数
       max-total: 5                                          # 最大连接数
@@ -36,7 +35,6 @@ eureka:
     instances:
       instance-id: 7001eureka      #微服务的标识id
       prefer-ip-address: true      #标识id上可显示该服务的IP地址
-=======
       min-idle: 5                                           
       initial-size: 5                                       
       max-total: 5                                          
@@ -57,4 +55,3 @@ info:
   company.name: www.atguigu.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
->>>>>>> 9742d7e718cd7c888333fef56c8fbeb1ee4e474c
