@@ -1,11 +1,11 @@
-spring:
+﻿spring:
   profiles:
     active:
       - dev
 
 ---
 server:
-  port: 7002  #注册中心占用7001端口
+  port: 7001  #注册中心占用7001端口
 
 spring:
   profiles: dev
@@ -23,7 +23,7 @@ eureka:
 
 ---
 server:
-  port: 7002  #注册中心占用7001端口
+  port: 7001  #注册中心占用7001端口
 
 spring:
   profiles: test

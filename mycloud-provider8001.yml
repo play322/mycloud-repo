@@ -8,20 +8,22 @@ server:
 
 
 mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml   # mybatis配置文件所在路径
-  type-aliases-package: com.itbjx.cloud.bean    #所有bean包
+  config-location: classpath:mybatis/mybatis.cfg.xml   
+  type-aliases-package: com.itbjx.cloud.bean    
   mapper-locations:
-    - classpath: mybatis/**/*.xml    # mapper映射文件路径
+    - classpath: mybatis/**/*Mapper.xml   
 
 
-spring:
+spring: 
+  profiles: dev
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
-    url: jdbc:mysql://localhost:3306/mycloud              # 数据库名称
+    driver-class-name: org.gjt.mm.mysql.Driver              
+    url: jdbc:mysql://localhost:3306/cloudDB03            
     username: root
     password: root
     dbcp2:
+<<<<<<< HEAD
       min-idle: 5                                           # 数据库连接池的最小维持连接数
       initial-size: 5                                       # 初始化连接数
       max-total: 5                                          # 最大连接数
@@ -34,3 +36,25 @@ eureka:
     instances:
       instance-id: 7001eureka      #微服务的标识id
       prefer-ip-address: true      #标识id上可显示该服务的IP地址
+=======
+      min-idle: 5                                           
+      initial-size: 5                                       
+      max-total: 5                                          
+      max-wait-millis: 2000                                  
+
+
+
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: mycloud-provider8001
+    prefer-ip-address: true
+ 
+info:
+  app.name: atguigu-microservicecloud-springcloudconfig01
+  company.name: www.atguigu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+>>>>>>> 9742d7e718cd7c888333fef56c8fbeb1ee4e474c
