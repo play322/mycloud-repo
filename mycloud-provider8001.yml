@@ -26,7 +26,7 @@ mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.itbjx.cloud.bean
   mapper-locations:
-    - classpath: mybatis/**/*Mapper.xml
+    - classpath: mybatis/**/*.xml
 
 eureka:
   client:
