@@ -19,7 +19,7 @@ feign:
 
 eureka:
   client:
-   # register-with-eureka: false
+   # register-with-eureka: false    #服务消费者可注册也可不注册到eureka中心
     service-url:
       defaultZone: http://localhost:7001/eureka/ #,http://localhost:7002/eureka/,http://localhost:7003/eureka/
 
