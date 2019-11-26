@@ -25,7 +25,7 @@ eureka:
 
 
 #feign 的负载均衡配置策略
-MYCLOUD-PROVIDER:
+MYCLOUD-CONFIG-DEV:
   ribbon:
     #NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule #配置规则 随机
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule #配置规则 轮询
