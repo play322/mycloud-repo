@@ -23,10 +23,10 @@ spring:
 
 
 mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml
+  #config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.itbjx.cloud.bean
-  mapper-locations:
-    - classpath: mybatis/**/*.xml
+  # mapper-locations:
+  # - classpath: mybatis/**/*.xml
 
 #eureka:
  # client:
