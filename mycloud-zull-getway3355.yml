@@ -9,9 +9,10 @@ server:
 
 zull:
   routes:
-    mycloud-provider: /user/**
-     # path: /user/**
-      #serviceId: mycloud-provider
+    mycloud-provider:
+      serviceId: mycloud-provider
+      path: /user/**
+
 
 
 
