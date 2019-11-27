@@ -36,7 +36,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka/     #注册进eureka中心地址
   instances:
-    instance-id: 7001eureka      #微服务的标识id
+    instance-id: mycloud-provider8001      #微服务的标识id
     prefer-ip-address: true      #标识id上可显示该服务的IP地址
 
 
