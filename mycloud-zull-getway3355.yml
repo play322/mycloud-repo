@@ -4,9 +4,12 @@ spring:
   application:
     name: mycloud-zull-getway
 
-
 server:
   port: 3355
+
+zull:
+  routes:
+
 
 
 eureka:
