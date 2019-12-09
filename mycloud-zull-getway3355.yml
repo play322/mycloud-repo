@@ -7,7 +7,7 @@ spring:
 server:
   port: 3355
 
-zull:
+zuul:
   routes:
     mycloud-provider: /aaa/**
 #      serviceId: MYCLOUD-PROVIDER
